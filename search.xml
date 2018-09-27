@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[webstrom配置]]></title>
+    <url>%2F2018%2F09%2F18%2Fwebstrom-config%2F</url>
+    <content type="text"><![CDATA[自动保存设置 Preferences | Appearance &amp; Behavior | System Settings &gt; Synchronization 未保存标记 Preferences | Editor | General | Editor Tabs &gt; Tab Appearance &gt; Mark modified tabs with asterisk 配置 JavaScript 语言版本 Preferences | Languages &amp; Frameworks | JavaScript]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mac系统运行多个chrome应用]]></title>
+    <url>%2F2018%2F09%2F18%2Fmac-multi-chrome%2F</url>
+    <content type="text"><![CDATA[复制一个chrome应用12cd '/Applications'cp -r 'Google Chrome.app' 'Google Chrome Work.app' 使用脚本编辑器(Script Editor)创建一个应用程序(Application)123set chrome to "\"/Applications/Google Chrome Work.app/Contents/MacOS/Google Chrome\""set userdatadir to "\"$HOME/Library/Application Support/Google/Chrome Work\""do shell script chrome &amp; " --user-data-dir=" &amp; userdatadir &amp; " &gt; /dev/null 2&gt;&amp;1 &amp;" 运行新建的脚本应用即可更换Chrome应用图标 If you want, you can give this application the same icon as Chrome:Select the Google Chrome application and choose File &gt; Get Info.Select the icon at the top left of the info dialog. You will see a blue highlight around the icon.Press ⌘C to copy the icon.Open the info dialog for the new application and select the icon in the top left.Press ⌘V to paste the copied icon.]]></content>
+      <categories>
+        <category>mac</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[git获得分支标签名称]]></title>
+    <url>%2F2018%2F09%2F18%2Fgit-head-name%2F</url>
+    <content type="text"><![CDATA[对于我自己的参考( 但这对其他人很有用)，我概述了这个线程中提到的大多数( 基本 命令行 ) 技术，每个技术应用于几个用例： 头部为( 指向处): 本地分支( 主) 远程跟踪分支，与本地分支同步( 与源/主机相同提交) 远程跟踪分支，不与本地分支同步( 原点/feature-foo ) 标记( v1.2.3 ) 常规分离头( 上面没有) 结果： 1git branch | sed -n &apos;/*/s///p&apos; 本地分支：master 远程跟踪分支( 同步): (detached from origin/master) 远程跟踪分支( 不同步): (detached from origin/feature-foo) 标记：(detached from v1.2.3) 常规分离头：(detached from 285f294) 1git status | head -1 本地分支： # On branch master 远程跟踪分支( 同步): # HEAD detached at origin/master 远程跟踪分支( 不同步): # HEAD detached at origin/feature-foo 标签： # HEAD detached at v1.2.3 常规分离头： # HEAD detached at 285f294 1git describe --all 本地分支：heads/master 远程跟踪分支( 同步): heads/master (注:不是remotes/origin/master ) 远程跟踪分支( 不同步): remotes/origin/feature-foo 标记：v1.2.3 常规分离头：v1.0.6-5-g2393761 1cat. git/HEAD : 本地分支：ref: refs/heads/master 所有其他用例：对应提交的SHA 1git rev-parse --abbrev-ref HEAD 本地分支：master 所有其他用例： HEAD 1git symbolic-ref --short HEAD 本地分支：master 所有其他用例： fatal: ref HEAD is not a symbolic ref ( 这是用git版本 1.8.3.1 完成的)]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[vue.js中增加骨架页面]]></title>
+    <url>%2F2018%2F09%2F14%2Fvue-skeleton%2F</url>
+    <content type="text"><![CDATA[在 vuejs-template/webpack 或 vuejs-template/pwa 中增加骨架页面 vue-skeleton-webpack-plugin 安装骨架页面插件库1yarn add vue-skeleton-webpack-plugin -D build/webpack.skeleton.conf.js123456789101112131415161718192021'use strict';const path = require('path')const merge = require('webpack-merge')const baseWebpackConfig = require('./webpack.base.conf')const nodeExternals = require('webpack-node-externals')module.exports = merge(baseWebpackConfig, &#123; target: 'node', devtool: false, entry: &#123; app: path.resolve(__dirname, '../src/entry-skeleton.js') &#125;, output: Object.assign(&#123;&#125;, baseWebpackConfig.output, &#123; libraryTarget: 'commonjs2' &#125;), externals: nodeExternals(&#123; whitelist: /\.css$/ &#125;), plugins: []&#125;) build/vue-loader.conf.js找到 extract: isProduction 修改为 extract: true build/webpack.dev.conf.js在 plugins 中对象中增加插件, 需要引入模块 const ExtractTextPlugin = require(&#39;extract-text-webpack-plugin&#39;) 1234// extract css into its own filenew ExtractTextPlugin(&#123; filename: utils.assetsPath('css/[name].[contenthash].css')&#125;) build/webpack.dev.conf.js webpack.prod.conf.js在 plugins 中对象中增加插件, 需要引入模块 const SkeletonWebpackPlugin = require(&#39;vue-skeleton-webpack-plugin&#39;)需要引入模块 const SkeletonWebpackPlugin = require(&#39;vue-skeleton-webpack-plugin&#39;) 12345// inject skeleton content(DOM &amp; CSS) into HTMLnew SkeletonWebpackPlugin(&#123; webpackConfig: require('./webpack.skeleton.conf'), quiet: true&#125;)]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F09%2F01%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
