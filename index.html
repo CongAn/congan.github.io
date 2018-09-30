@@ -433,8 +433,7 @@
 
       
         
-          
-            <p>自动保存设置</p>
+          <p>自动保存设置</p>
 <blockquote>
 <p>Preferences | Appearance &amp; Behavior | System Settings &gt; Synchronization</p>
 </blockquote>
@@ -442,12 +441,13 @@
 <blockquote>
 <p>Preferences | Editor | General | Editor Tabs &gt; Tab Appearance &gt; Mark modified tabs with asterisk</p>
 </blockquote>
-<p>配置 JavaScript 语言版本</p>
-<blockquote>
-<p>Preferences | Languages &amp; Frameworks | JavaScript</p>
-</blockquote>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/18/webstrom-config/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -614,14 +614,15 @@
 
       
         
-          
-            <h5 id="复制一个chrome应用"><a href="#复制一个chrome应用" class="headerlink" title="复制一个chrome应用"></a>复制一个chrome应用</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="string">'/Applications'</span></span><br><span class="line">cp -r <span class="string">'Google Chrome.app'</span> <span class="string">'Google Chrome Work.app'</span></span><br></pre></td></tr></table></figure>
+          <h5 id="复制一个chrome应用"><a href="#复制一个chrome应用" class="headerlink" title="复制一个chrome应用"></a>复制一个chrome应用</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="string">'/Applications'</span></span><br><span class="line">cp -r <span class="string">'Google Chrome.app'</span> <span class="string">'Google Chrome Work.app'</span></span><br></pre></td></tr></table></figure>
 <h5 id="使用脚本编辑器-Script-Editor-创建一个应用程序-Application"><a href="#使用脚本编辑器-Script-Editor-创建一个应用程序-Application" class="headerlink" title="使用脚本编辑器(Script Editor)创建一个应用程序(Application)"></a>使用脚本编辑器(<code>Script Editor</code>)创建一个应用程序(<code>Application</code>)</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> chrome to <span class="string">"\"/Applications/Google Chrome Work.app/Contents/MacOS/Google Chrome\""</span></span><br><span class="line"><span class="built_in">set</span> userdatadir to <span class="string">"\"<span class="variable">$HOME</span>/Library/Application Support/Google/Chrome Work\""</span></span><br><span class="line"><span class="keyword">do</span> shell script chrome &amp; <span class="string">" --user-data-dir="</span> &amp; userdatadir &amp; <span class="string">" &gt; /dev/null 2&gt;&amp;1 &amp;"</span></span><br></pre></td></tr></table></figure>
-<h5 id="运行新建的脚本应用即可"><a href="#运行新建的脚本应用即可" class="headerlink" title="运行新建的脚本应用即可"></a>运行新建的脚本应用即可</h5><h5 id="更换Chrome应用图标"><a href="#更换Chrome应用图标" class="headerlink" title="更换Chrome应用图标"></a>更换Chrome应用图标</h5><blockquote>
-<p>If you want, you can give this application the same icon as Chrome:<br>Select the Google Chrome application and choose File &gt; Get Info.<br>Select the icon at the top left of the info dialog. You will see a blue highlight around the icon.<br>Press ⌘C to copy the icon.<br>Open the info dialog for the new application and select the icon in the top left.<br>Press ⌘V to paste the copied icon.</p>
-</blockquote>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/18/mac-multi-chrome/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -736,7 +737,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-09-27 23:24:38" itemprop="dateModified" datetime="2018-09-27T23:24:38+08:00">2018-09-27</time>
+                <time title="Modified: 2018-09-28 12:25:42" itemprop="dateModified" datetime="2018-09-28T12:25:42+08:00">2018-09-28</time>
               
             
           </span>
@@ -788,8 +789,7 @@
 
       
         
-          
-            <p>对于我自己的参考( 但这对其他人很有用)，我概述了这个线程中提到的大多数( 基本 命令行 ) 技术，每个技术应用于几个用例： 头部为( 指向处):</p>
+          <p>对于我自己的参考( 但这对其他人很有用)，我概述了这个线程中提到的大多数( 基本 命令行 ) 技术，每个技术应用于几个用例： 头部为( 指向处):</p>
 <ul>
 <li>本地分支( 主)</li>
 <li>远程跟踪分支，与本地分支同步( 与源/主机相同提交)</li>
@@ -797,9 +797,7 @@
 <li>标记( v1.2.3 )</li>
 <li>常规分离头( 上面没有)</li>
 </ul>
-<p>结果：</p>
-<ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch | sed -n &apos;/*/s///p&apos;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch | sed -n '/*/s///p'</span><br></pre></td></tr></table></figure>
 <ul>
 <li>本地分支：<code>master</code></li>
 <li>远程跟踪分支( 同步): <code>(detached from origin/master)</code></li>
@@ -807,48 +805,13 @@
 <li>标记：<code>(detached from v1.2.3)</code></li>
 <li>常规分离头：<code>(detached from 285f294)</code></li>
 </ul>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status | head -1</span><br></pre></td></tr></table></figure>
-<ul>
-<li>本地分支： <code># On branch master</code></li>
-<li>远程跟踪分支( 同步): <code># HEAD detached at origin/master</code></li>
-<li>远程跟踪分支( 不同步): <code># HEAD detached at origin/feature-foo</code></li>
-<li>标签： <code># HEAD detached at v1.2.3</code></li>
-<li>常规分离头： <code># HEAD detached at 285f294</code></li>
-</ul>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git describe --all</span><br></pre></td></tr></table></figure>
-<ul>
-<li>本地分支：<code>heads/master</code></li>
-<li>远程跟踪分支( 同步): <code>heads/master</code> (注:<em>不是</em><code>remotes/origin/master</code> )</li>
-<li>远程跟踪分支( 不同步): <code>remotes/origin/feature-foo</code></li>
-<li>标记：<code>v1.2.3</code></li>
-<li>常规分离头：<code>v1.0.6-5-g2393761</code></li>
-</ul>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat. git/HEAD</span><br></pre></td></tr></table></figure>
-<p>:</p>
-<ul>
-<li>本地分支：<code>ref: refs/heads/master</code></li>
-<li>所有其他用例：对应提交的SHA</li>
-</ul>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rev-parse --abbrev-ref HEAD</span><br></pre></td></tr></table></figure>
-<ul>
-<li>本地分支：<code>master</code></li>
-<li>所有其他用例： <code>HEAD</code></li>
-</ul>
-</li>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git symbolic-ref --short HEAD</span><br></pre></td></tr></table></figure>
-<ul>
-<li>本地分支：<code>master</code></li>
-<li>所有其他用例： <code>fatal: ref HEAD is not a symbolic ref</code></li>
-</ul>
-</li>
-</ul>
-<p>( 这是用git版本 1.8.3.1 完成的)</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/18/git-head-name/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -963,7 +926,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-09-27 23:26:22" itemprop="dateModified" datetime="2018-09-27T23:26:22+08:00">2018-09-27</time>
+                <time title="Modified: 2018-09-28 09:42:40" itemprop="dateModified" datetime="2018-09-28T09:42:40+08:00">2018-09-28</time>
               
             
           </span>
@@ -1015,16 +978,16 @@
 
       
         
-          
-            <p>在 <code>vuejs-template/webpack</code> 或 <code>vuejs-template/pwa</code> 中增加骨架页面 <code>vue-skeleton-webpack-plugin</code></p>
+          <p>在 <code>vuejs-template/webpack</code> 或 <code>vuejs-template/pwa</code> 中增加骨架页面 <code>vue-skeleton-webpack-plugin</code></p>
 <h4 id="安装骨架页面插件库"><a href="#安装骨架页面插件库" class="headerlink" title="安装骨架页面插件库"></a>安装骨架页面插件库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add vue-skeleton-webpack-plugin -D</span><br></pre></td></tr></table></figure>
-<h4 id="build-webpack-skeleton-conf-js"><a href="#build-webpack-skeleton-conf-js" class="headerlink" title="build/webpack.skeleton.conf.js"></a><code>build/webpack.skeleton.conf.js</code></h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>)</span><br><span class="line"><span class="keyword">const</span> merge = <span class="built_in">require</span>(<span class="string">'webpack-merge'</span>)</span><br><span class="line"><span class="keyword">const</span> baseWebpackConfig = <span class="built_in">require</span>(<span class="string">'./webpack.base.conf'</span>)</span><br><span class="line"><span class="keyword">const</span> nodeExternals = <span class="built_in">require</span>(<span class="string">'webpack-node-externals'</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = merge(baseWebpackConfig, &#123;</span><br><span class="line">  target: <span class="string">'node'</span>,</span><br><span class="line">  devtool: <span class="literal">false</span>,</span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: path.resolve(__dirname, <span class="string">'../src/entry-skeleton.js'</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  output: <span class="built_in">Object</span>.assign(&#123;&#125;, baseWebpackConfig.output, &#123;</span><br><span class="line">    libraryTarget: <span class="string">'commonjs2'</span></span><br><span class="line">  &#125;),</span><br><span class="line">  externals: nodeExternals(&#123;</span><br><span class="line">    whitelist: <span class="regexp">/\.css$/</span></span><br><span class="line">  &#125;),</span><br><span class="line">  plugins: []</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h4 id="build-vue-loader-conf-js"><a href="#build-vue-loader-conf-js" class="headerlink" title="build/vue-loader.conf.js"></a><code>build/vue-loader.conf.js</code></h4><p>找到 <code>extract: isProduction</code> 修改为 <code>extract: true</code></p>
-<h4 id="build-webpack-dev-conf-js"><a href="#build-webpack-dev-conf-js" class="headerlink" title="build/webpack.dev.conf.js"></a><code>build/webpack.dev.conf.js</code></h4><p>在  <code>plugins</code> 中对象中增加插件, 需要引入模块 <code>const ExtractTextPlugin = require(&#39;extract-text-webpack-plugin&#39;)</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// extract css into its own file</span></span><br><span class="line"><span class="keyword">new</span> ExtractTextPlugin(&#123;</span><br><span class="line">  filename: utils.assetsPath(<span class="string">'css/[name].[contenthash].css'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h4 id="build-webpack-dev-conf-js-webpack-prod-conf-js"><a href="#build-webpack-dev-conf-js-webpack-prod-conf-js" class="headerlink" title="build/webpack.dev.conf.js webpack.prod.conf.js"></a><code>build/webpack.dev.conf.js</code> <code>webpack.prod.conf.js</code></h4><p>在  <code>plugins</code> 中对象中增加插件, 需要引入模块 <code>const SkeletonWebpackPlugin = require(&#39;vue-skeleton-webpack-plugin&#39;)</code><br>需要引入模块 <code>const SkeletonWebpackPlugin = require(&#39;vue-skeleton-webpack-plugin&#39;)</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// inject skeleton content(DOM &amp; CSS) into HTML</span></span><br><span class="line"><span class="keyword">new</span> SkeletonWebpackPlugin(&#123;</span><br><span class="line">  webpackConfig: <span class="built_in">require</span>(<span class="string">'./webpack.skeleton.conf'</span>),</span><br><span class="line">  quiet: <span class="literal">true</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-          
+<h4 id="build-webpack-skeleton-conf-js"><a href="#build-webpack-skeleton-conf-js" class="headerlink" title="build/webpack.skeleton.conf.js"></a><code>build/webpack.skeleton.conf.js</code></h4>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/14/vue-skeleton/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1126,6 +1089,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-09-29 11:38:57" itemprop="dateModified" datetime="2018-09-29T11:38:57+08:00">2018-09-29</time>
+              
+            
           </span>
 
           
@@ -1157,18 +1136,15 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br><img src="/2018/09/01/hello-world/2.jpg" alt="2"></p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/01/hello-world/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1275,6 +1251,19 @@
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">0</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
               
             </nav>
           
