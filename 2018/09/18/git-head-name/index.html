@@ -108,17 +108,17 @@
 
 
 
-  <meta name="description" content="对于我自己的参考( 但这对其他人很有用)，我概述了这个线程中提到的大多数( 基本 命令行 ) 技术，每个技术应用于几个用例： 头部为( 指向处):  本地分支( 主) 远程跟踪分支，与本地分支同步( 与源/主机相同提交) 远程跟踪分支，不与本地分支同步( 原点/feature-foo ) 标记( v1.2.3 ) 常规分离头( 上面没有)   1git branch | sed -n &apos;/*/s/">
+  <meta name="description" content="对于我自己的参考( 但这对其他人很有用)，我概述了这个线程中提到的大多数( 基本 命令行 ) 技术，每个技术应用于几个用例： 头部为( 指向处):  本地分支( 主) 远程跟踪分支，与本地分支同步( 与源/主机相同提交) 远程跟踪分支，不与本地分支同步( 原点/feature-foo ) 标记( v1.2.3 ) 常规分离头( 上面没有)  git branch 1git branch | sed">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git获得分支标签名称">
 <meta property="og:url" content="http://yoursite.com/2018/09/18/git-head-name/index.html">
 <meta property="og:site_name" content="安可的小站">
-<meta property="og:description" content="对于我自己的参考( 但这对其他人很有用)，我概述了这个线程中提到的大多数( 基本 命令行 ) 技术，每个技术应用于几个用例： 头部为( 指向处):  本地分支( 主) 远程跟踪分支，与本地分支同步( 与源/主机相同提交) 远程跟踪分支，不与本地分支同步( 原点/feature-foo ) 标记( v1.2.3 ) 常规分离头( 上面没有)   1git branch | sed -n &apos;/*/s/">
+<meta property="og:description" content="对于我自己的参考( 但这对其他人很有用)，我概述了这个线程中提到的大多数( 基本 命令行 ) 技术，每个技术应用于几个用例： 头部为( 指向处):  本地分支( 主) 远程跟踪分支，与本地分支同步( 与源/主机相同提交) 远程跟踪分支，不与本地分支同步( 原点/feature-foo ) 标记( v1.2.3 ) 常规分离头( 上面没有)  git branch 1git branch | sed">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-28T04:25:42.075Z">
+<meta property="og:updated_time" content="2018-10-08T02:11:44.520Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git获得分支标签名称">
-<meta name="twitter:description" content="对于我自己的参考( 但这对其他人很有用)，我概述了这个线程中提到的大多数( 基本 命令行 ) 技术，每个技术应用于几个用例： 头部为( 指向处):  本地分支( 主) 远程跟踪分支，与本地分支同步( 与源/主机相同提交) 远程跟踪分支，不与本地分支同步( 原点/feature-foo ) 标记( v1.2.3 ) 常规分离头( 上面没有)   1git branch | sed -n &apos;/*/s/">
+<meta name="twitter:description" content="对于我自己的参考( 但这对其他人很有用)，我概述了这个线程中提到的大多数( 基本 命令行 ) 技术，每个技术应用于几个用例： 头部为( 指向处):  本地分支( 主) 远程跟踪分支，与本地分支同步( 与源/主机相同提交) 远程跟踪分支，不与本地分支同步( 原点/feature-foo ) 标记( v1.2.3 ) 常规分离头( 上面没有)  git branch 1git branch | sed">
 
 
 
@@ -380,7 +380,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-09-28 12:25:42" itemprop="dateModified" datetime="2018-09-28T12:25:42+08:00">2018-09-28</time>
+                <time title="Modified: 2018-10-08 10:11:44" itemprop="dateModified" datetime="2018-10-08T10:11:44+08:00">2018-10-08</time>
               
             
           </span>
@@ -439,7 +439,7 @@
 <li>标记( v1.2.3 )</li>
 <li>常规分离头( 上面没有)</li>
 </ul>
- <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch | sed -n '/*/s///p'</span><br></pre></td></tr></table></figure>
+<h4 id="git-branch"><a href="#git-branch" class="headerlink" title="git branch"></a>git branch</h4> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch | sed -n '/*/s///p'</span><br></pre></td></tr></table></figure>
 <ul>
 <li>本地分支：<code>master</code></li>
 <li>远程跟踪分支( 同步): <code>(detached from origin/master)</code></li>
@@ -455,7 +455,7 @@
 <li>标签： <code># HEAD detached at v1.2.3</code></li>
 <li>常规分离头： <code># HEAD detached at 285f294</code></li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git describe --all</span><br></pre></td></tr></table></figure>
+<h4 id="git-describe"><a href="#git-describe" class="headerlink" title="git describe"></a>git describe</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git describe --all</span><br></pre></td></tr></table></figure>
 <ul>
 <li>本地分支：<code>heads/master</code></li>
 <li>远程跟踪分支( 同步): <code>heads/master</code> (注:<em>不是</em><code>remotes/origin/master</code> )</li>
@@ -463,17 +463,17 @@
 <li>标记：<code>v1.2.3</code></li>
 <li>常规分离头：<code>v1.0.6-5-g2393761</code></li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat. git/HEAD</span><br></pre></td></tr></table></figure>
+<h4 id="cat-git-HEAD"><a href="#cat-git-HEAD" class="headerlink" title="cat. git/HEAD"></a>cat. git/HEAD</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat. git/HEAD</span><br></pre></td></tr></table></figure>
 <ul>
 <li>本地分支：<code>ref: refs/heads/master</code></li>
 <li>所有其他用例：对应提交的SHA</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rev-parse --abbrev-ref HEAD</span><br></pre></td></tr></table></figure>
+<h4 id="git-rev-parse"><a href="#git-rev-parse" class="headerlink" title="git rev-parse"></a>git rev-parse</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rev-parse --abbrev-ref HEAD</span><br></pre></td></tr></table></figure>
 <ul>
 <li>本地分支：<code>master</code></li>
 <li>所有其他用例： <code>HEAD</code></li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git symbolic-ref --short HEAD</span><br></pre></td></tr></table></figure>
+<h4 id="git-symbolic-ref"><a href="#git-symbolic-ref" class="headerlink" title="git symbolic-ref"></a>git symbolic-ref</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git symbolic-ref --short HEAD</span><br></pre></td></tr></table></figure>
 <ul>
 <li>本地分支：<code>master</code></li>
 <li>所有其他用例： <code>fatal: ref HEAD is not a symbolic ref</code></li>
@@ -566,8 +566,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -610,19 +619,6 @@
               
 
               
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                    <span class="site-state-item-count">0</span>
-                    <span class="site-state-item-name">tags</span>
-                  </a>
-                </div>
-              
             </nav>
           
 
@@ -644,6 +640,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#git-branch"><span class="nav-number">1.</span> <span class="nav-text">git branch</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git-describe"><span class="nav-number">2.</span> <span class="nav-text">git describe</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cat-git-HEAD"><span class="nav-number">3.</span> <span class="nav-text">cat. git/HEAD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git-rev-parse"><span class="nav-number">4.</span> <span class="nav-text">git rev-parse</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git-symbolic-ref"><span class="nav-number">5.</span> <span class="nav-text">git symbolic-ref</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
